@@ -128,4 +128,5 @@ alias gp="git push"
 alias gpu="git pull"
 alias gck="git checkout"
 
-export BOOST_ROOT=/home/mateus/versioning/libs/boost_1_81_0
+tmux=$(which tmux)
+alias tmux="$tmux -2"
