@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+pushd $HOME/versioning/notes
+git add -A
+git commit -m 'Update notes'
+git push
+popd
+
+pushd /mnt/d/versioning/notes
+git add -A
+git commit -m 'Update notes'
+git push
+popd

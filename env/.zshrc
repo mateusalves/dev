@@ -130,3 +130,15 @@ alias gck="git checkout"
 
 tmux=$(which tmux)
 alias tmux="$tmux -2"
+
+alias upn='pushd ${HOME}/versioning/notes && git add . && git commit -m "Automated commit: $(date +'%Y-%m-%d %H:%M:%S')" && git push && popd'
+alias wupn='pushd /mnt/d/versioning/notes && git add . && git commit -m "Automated commit: $(date +'%Y-%m-%d %H:%M:%S')" && git push && popd'
+
+
+pushd ${HOME}/versioning/notes
+git fetch && git pull
+popd
+
+pushd /mnt/d/versioning/notes
+git fetch && git pull
+popd
