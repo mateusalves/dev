@@ -37,5 +37,6 @@ symlink $DEV_ENV/env/.tmux.conf ~/.tmux.conf
 symlink $DEV_ENV/env/.zshrc ~/.zshrc
 symlink $DEV_ENV/env/.gdbinit ~/.gdbinit
 symlink $DEV_ENV/ext/tmux-sessionizer/tmux-sessionizer $HOME/.tmux-sessionizer
-symlink $DEV_ENV/env/.config/nvim ~/.config/nvim
+symlink $DEV_ENV/env/.config/nvim $XDG_CONFIG_HOME/nvim
+symlink $DEV_ENV/.local/scripts ~/.local
 

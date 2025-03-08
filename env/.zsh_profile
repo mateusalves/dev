@@ -35,5 +35,5 @@ addToPathFront() {
     fi
 }
 
-addToPathFront $HOME/.local/scripts
+addToPath $HOME/.local/scripts
 

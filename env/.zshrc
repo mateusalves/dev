@@ -82,6 +82,7 @@ ZSH_THEME="af-magic"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh_profile
 
 # User configuration
 
@@ -119,7 +120,7 @@ alias pbpaste='xclip -selection clipboard -o'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 
-alias ts='${HOME}/bin/tmux-sessionizer '
+alias ts='${HOME}/.tmux-sessionizer '
 # git
 alias gap="git add -p"
 alias gc="git commit"
@@ -128,8 +129,8 @@ alias gp="git push"
 alias gpu="git pull"
 alias gck="git checkout"
 
-tmux=$(which tmux)
-alias tmux="$tmux -2"
+#tmux=$(which tmux)
+#alias tmux="$tmux -2"
 
 alias pushn='pushd ${HOME}/versioning/notes && git add . && git commit -m "Update notes" && git push && popd'
 alias wpushn='pushd /mnt/d/versioning/notes && git add . && git commit -m "Update notes" && git push && popd'
